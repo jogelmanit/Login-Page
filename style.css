@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apple-like font stack */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f5f5f7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Login Card */
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Heading */
+.login-box h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #6e6e73;
+    margin-bottom: 30px;
+}
+
+/* Inputs */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d7;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+    border-color: #0071e3;
+    box-shadow: 0 0 0 2px rgba(0,113,227,0.2);
+}
+
+/* Floating label */
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    font-size: 14px;
+    color: #86868b;
+    pointer-events: none;
+    transition: 0.2s ease;
+    background: #fff;
+    padding: 0 5px;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #0071e3;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #0071e3;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+}
+
+.footer a {
+    font-size: 13px;
+    color: #0071e3;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
